@@ -1,0 +1,351 @@
+/* ESTILOS DE BODYS */
+
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+.body-style {
+    background-color: nth($bg-color, 1);
+    font-family: $font-gral;
+    color: nth($font-colors, 8);
+}
+
+.body-pink {
+    background-color: nth($bg-color, 5);
+    font-family: $font-gral;
+    color: nth($font-colors, 10);
+}
+
+.general-style {
+    @include general-style(nth($font-colors, 9), $gral-fs, $margin-gral);
+
+    @media (min-width:600px) and (max-width:1024px) {
+        @include general-style(nth($font-colors, 9), $gral-tb-fs, $margin-tb-gral);
+    }
+
+    @media (max-width: 599px) {
+        @include general-style(nth($font-colors, 9), $gral-cp-fs, $margin-cp-gral);
+    }
+}
+
+.about {
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include display (flex, center, center);
+    }
+
+    @media only screen and (max-width: 599px) {
+        @include display (grid, center, center);
+    }
+}
+
+.item-position-end {
+    @include display (flex, end, center);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include display (flex, end, center);
+    }
+
+    @media only screen and (max-width: 599px) {
+        @include display (flex, center, center);
+    }
+}
+
+.item-position-start {
+    @include display (flex, start, center);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include display (flex, start, center);
+    }
+
+    @media only screen and (max-width: 599px) {
+        @include display (flex, center, center);
+    }
+}
+
+/* CONTAINERS */
+.index-grid {
+    margin: 10px 200px;
+    @include display (flex, center, center);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        margin: 10px 80px;
+        @include display (flex, center, center);
+    }
+
+    @media only screen and (max-width: 599px) {
+        margin: 10px 30px;
+
+    }
+}
+
+.card-container {
+    @include display (flex, space-evenly, center);
+}
+
+.grid-container {
+    margin: 20px 250px;
+    background-color: nth($bg-color, 3);
+}
+
+.grid-card-container {
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        display: flex;
+        justify-content: center;
+    }
+
+    @media only screen and (max-width: 599px) {
+        display: grid;
+        justify-content: center;
+    }
+}
+
+.divider-container {
+    @include display (flex, center, center);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.text-container {
+    display: grid;
+    justify-content: center;
+    padding: 0 20px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 50%;
+    }
+}
+
+.text-container-2 {
+    display: grid;
+    justify-content: center;
+    padding: 0 20px;
+
+}
+
+.self-card-2-container {
+    width: 100%;
+
+    @media only screen and (max-width: 599px) {
+        width: 40%;
+    }
+}
+
+.self-card-2-container-2 {
+    width: 100%;
+
+    @media only screen and (max-width: 599px) {
+        width: 60%;
+    }
+}
+
+.self-card-2-container-3 {
+    width: 100%;
+
+    @media (max-width: 599px) {
+        width: auto;
+    }
+}
+
+.adoption-req-container {
+    margin: 0 20px 15px 20px;
+    @include display (flex, center, 0);
+    width: fit-content;
+
+    @media (min-width:600px) and (max-width:1024px) {
+        margin: 0 10px 15px 10px;
+    }
+
+    @media (max-width: 599px) {
+        margin: 0 30px 5px 30px;
+    }
+}
+
+.adopt-container {
+    @include display (flex, center, 0);
+    margin: 0 50px 25px 50px;
+
+    @media (max-width: 599px) {
+        margin: 0 50px 0px 50px;
+    }
+}
+
+.donate-container {
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+.form-container{
+
+    display: grid;
+
+}
+
+/* CARD STYLES */
+
+.self-card {
+    width: 150px;
+    height: 300px;
+    @include display (grid, center, center);
+    margin: 0 5px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 150px;
+        height: 180px;
+        @include display (grid, center, center);
+        margin: 0 5px;
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 150px;
+        height: 190px;
+        @include display (grid, center, center);
+        margin: 0 5px;
+    }
+}
+
+.self-card-2 {
+    width: 150px;
+    height: 300px;
+    @include display (grid, center, center);
+    margin: 0 5px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 150px;
+        height: 180px;
+        @include display (grid, center, center);
+        margin: 0 5px;
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 300px;
+        height: 150px;
+        @include display (flex, center, center);
+        margin: 10px 5px;
+    }
+}
+
+.self-card-3 {
+    width: 500px;
+    height: 150px;
+    margin: auto;
+    @include display (flex, center, center);
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        background-color: nth($bg-color, 3);
+    }
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        background-color: nth($bg-color, 3);
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 300px;
+        height: 150px;
+        @include display (flex, center, center);
+        background-color: nth($bg-color, 3);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+    }
+}
+
+.self-card-4 {
+    width: 700px;
+    height: 150px;
+    margin: auto;
+    @include display (flex, center, center);
+
+    @media only screen and (max-width: 599px) {
+        width: 300px;
+        height: 250px;
+        @include display (flex, center, center);
+    }
+
+}
+
+.self-card-5 {
+    width: 500px;
+    height: 150px;
+    @include display (flex, center, center);
+    margin: 0 20px;
+
+    &:hover {
+        border-radius: 10px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        background-color: nth($bg-color, 3);
+    }
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 550px;
+        height: 180px;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        background-color: nth($bg-color, 3);
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 300px;
+        height: 150px;
+        @include display (flex, center, center);
+        background-color: nth($bg-color, 3);
+        border-radius: 10px;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 50px;
+    }
+}
+
+.card {
+
+    &:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+    }
+
+}
+
+
+
+/* DIVISORES */
+.division {
+    width: 50%;
+    background-color: nth($font-colors, 6);
+}
+
+.border-left {
+    border-left: 2px solid nth($font-colors, 11);
+    height: 50%;
+    display: flex;
+    margin: auto;
+}
+
+.border-left-2 {
+    border-left: 2px solid nth($font-colors, 10);
+    height: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.border-right {
+    border-right: 2px solid nth($font-colors, 10);
+    height: 90%;
+    display: flex;
+    margin: auto;
+}
+
+.border-right-2 {
+    border-right: 2px solid nth($font-colors, 11);
+    height: 50%;
+    display: flex;
+    margin: auto;
+}
+

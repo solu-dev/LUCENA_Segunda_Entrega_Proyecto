@@ -1,0 +1,66 @@
+/* MIXINS */
+@import 'variables';
+@import 'listas';
+
+
+@mixin encabezado($f-family, $f-color, $f-size) {
+    font-family: $f-family;
+    color: $f-color; 
+    text-align: justify;
+    font-size: $f-size;
+    text-transform: uppercase;
+}
+
+@mixin sub-encabezado($f-family, $f-color, $f-size) {
+    font-family: $f-family;
+    color: $f-color; 
+    text-align: justify;
+    font-size: $f-size;
+}
+
+@mixin general-style($f-color, $f-size, $margin) {
+    color: $f-color;   
+    font-size: $f-size;
+    text-align: center;
+    background-color: nth($bg-color, 1);
+    margin: $margin;
+    margin-top: 10px;
+}
+
+@mixin menu-container {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+@mixin text ($f-size, $f-family, $position, $f-color){
+    font-size: $f-size;
+    font-family: $f-family;
+    text-align: $position;
+    color: $f-color;
+}
+
+@mixin text-card ($f-size, $f-family, $position){
+    font-size: $f-size;
+    font-family: $f-family;
+    text-align: $position;
+}
+
+@mixin display ($display, $position-h, $position-v){
+    display: $display;
+    justify-content: $position-h;
+    align-items: $position-v;
+}
+
+@mixin adoption-button-media-query ($fontsize, $padding, $width, $bground) {
+    background-color: $bground;
+    border: none;
+    text-decoration: none;
+    text-align: center;
+    font-family: $font-gral;
+    font-size: $fontsize;
+    padding: $padding;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    width: $width;
+    margin: 10px 100px 10px 100px;
+}

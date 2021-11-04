@@ -1,0 +1,168 @@
+/* ESTILOS Y CONTENEDORES DE IMAGENES */
+@import '../base/variables';
+@import '../base/listas';
+
+
+.index-card-img { 
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    align-items: center;
+    padding-bottom: 20px;   
+
+    @media only screen and (max-width: 599px) {
+        display: flex;
+        justify-self: center;
+        margin: auto;
+        align-items: center;
+        padding: 10px 0px;   
+    }
+}
+
+.index-card-img-2 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 60%;
+        display: flex;
+        justify-content: center;   
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 90%;
+        display: flex;
+        margin: auto;
+        justify-items: center; 
+        }
+}
+
+.index-card-img-3 { 
+    display: flex;
+    justify-self: center;
+    margin: auto;
+    padding-bottom: 20px;   
+}
+
+.img-container-2 { 
+    @include display (flex, start, center);
+    padding-top: 80px;
+}
+
+.hr-card {
+    width: 40%;
+    border-top: 2px solid nth($font-colors, 11);
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+
+}
+
+.hr-card-2 {
+    width: 40%;
+    border-top: 2px solid nth($bg-color, 1);
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+}
+
+.hr-card-3 {
+    display: none;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        border-right: none;
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 40%;
+        border-top: 2px solid nth($bg-color, 6);
+        border-radius: 5px;
+        display: flex;
+        margin: auto;
+    }
+}
+
+.divider {
+    border-right: 1px solid nth($bg-color, 7);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        border-right: none;
+    }
+
+    @media only screen and (max-width: 599px) {
+        border-right: 2px solid nth($bg-color, 1);
+
+    }
+}
+
+.divider-2 {
+    border-right: none;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        border-right: 1px solid nth($bg-color, 7);
+    }
+
+    @media only screen and (max-width: 599px) {
+        border-right: none;
+
+    }
+}
+
+.divider-3 {
+    border-left: none;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        border-left: none;
+    }
+
+    @media only screen and (max-width: 599px) {
+        border-left: 2px solid nth($font-colors, 9);
+    }
+
+}
+
+.icon-img {
+    display: flex;
+    justify-self: end;
+}
+
+.img-full {
+    width: 100%;
+}
+
+.img-conteiner {
+    width: 100%;
+    display: flex;
+
+}
+
+.content-img {
+    position: relative;
+}
+
+.card-img-3 {
+
+    @media only screen and (max-width: 599px) {
+        width: 25%;
+        height: 25%;
+        margin: auto;
+    }
+}
+
+.card-img-4 {
+
+    @media only screen and (max-width: 599px) {
+        width: 60%;
+        height: 60%;
+        margin: auto;
+    }
+}
+
+.card-img-5 {
+
+    @media only screen and (max-width: 599px) {
+        width: 70%;
+        margin: auto;
+    }
+}

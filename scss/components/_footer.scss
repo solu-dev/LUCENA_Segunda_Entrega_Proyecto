@@ -1,0 +1,21 @@
+/* ESTILOS Y CONTAINERS DEL FOOTER */
+
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+/* CONTAINERS */
+
+.footer-container {
+    @include display (flex, center, center);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+/* IMAGES */
+
+.footer-img {
+    margin: 0 20px;
+}
+

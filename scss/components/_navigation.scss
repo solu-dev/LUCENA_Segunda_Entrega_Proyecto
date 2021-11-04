@@ -1,0 +1,200 @@
+/* NAVIGATION */
+@import '../base/variables';
+@import '../base/listas';
+
+/* LINKS */
+.link-style {
+    text-decoration: none;
+    font-size: $link-gral;
+    color: nth($font-colors, 10);
+
+    &:hover {
+        text-decoration: none;
+        color: nth($font-colors, 10);
+        font-weight: bold;
+    }
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        text-decoration: none;
+        font-size: $link-tb-gral;
+        color: nth($font-colors, 10);
+    }
+
+    @media only screen and (max-width: 599px) {
+        text-decoration: none;
+        font-size: $link-cp-gral;
+        color: nth($font-colors, 10);
+    }
+}
+
+.link-style-footer {
+    text-decoration: none;
+    font-size: $link-gral;
+    color: nth($font-colors, 7);
+    padding-left: 5px;
+
+    &:hover {
+        text-decoration: none;
+        color: nth($font-colors, 7);
+        font-weight: bold;
+    }
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        text-decoration: none;
+        font-size: $link-tb-gral;
+        color: nth($font-colors, 7);
+    }
+
+    @media only screen and (max-width: 599px) {
+        text-decoration: none;
+        font-size: $link-cp-gral;
+        color: nth($font-colors, 7);
+    }
+}
+
+.link-style-home {
+    text-decoration: none;
+    font-size: $link-gral;
+    color: nth($font-colors, 7);
+
+    &:hover {
+        text-decoration: none;
+        color: nth($font-colors, 7);
+        font-weight: bold;
+    }
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        text-decoration: none;
+        font-size: $link-tb-gral;
+        color: nth($font-colors, 7);
+    }
+
+    @media only screen and (max-width: 599px) {
+        text-decoration: none;
+        font-size: $link-cp-gral;
+        color: nth($font-colors, 7);
+    }
+}
+
+.home {
+    padding-right: 10px;
+    border-right: 2px solid nth($font-colors, 7);
+   
+}
+
+.v-line {
+    padding-right: 17px;
+    border-right: 2px solid nth($font-colors, 7);
+    height: 30%;
+    display: flex;
+    margin: auto;
+
+    @media only screen and (max-width: 599px) {
+        padding-right: 5px;
+    }
+}
+
+.dropdown-link {
+    color: nth($font-colors, 11);
+    font-size: $link-gral;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        color: nth($font-colors, 11);
+        font-size: $link-tb-gral;
+    }
+
+    @media only screen and (max-width: 599px) {
+        color: nth($font-colors, 11);
+        font-size: $link-cp-gral;
+    }
+}
+
+.card-link {
+    text-decoration: none;
+    color: nth($font-colors, 11);
+
+    &:hover {
+        text-decoration: none;
+        color: nth($font-colors, 10);
+        font-weight: bold;
+    }
+}
+
+.button-link-style {
+    text-decoration: none;
+    color: nth($font-colors, 12);
+    font-size: $link-f;
+
+    &:hover{
+        text-decoration: none;
+        color: nth($font-colors, 12);
+    }
+
+    @media (max-width: 599px) {
+        font-size: $link-tb-gral;
+    }
+}
+
+.adoption-button-style {
+    @include adoption-button-media-query($font-gral, 12px 28px, 40%, nth($font-colors, 10));
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 1s;
+    }
+
+    @media (min-width:600px) and (max-width:1024px) {
+        @include adoption-button-media-query($font-gral, 10px 10px, 50%, nth($font-colors, 10));
+        
+    }
+
+    @media (max-width: 599px) {
+        padding: 8px 8px;
+        width: 75%;
+        margin: 10px 50px 10px 50px;
+       
+
+    }
+}
+
+.send-button-style {
+    @include adoption-button-media-query($font-gral, 12px 28px, 40%, nth($font-colors, 11));
+
+    &:hover {
+        transform: scale(1.05);
+        transition: all 1s;
+    }
+
+    @media (min-width:600px) and (max-width:1024px) {
+        @include adoption-button-media-query($font-gral, 10px 10px, 50%, nth($font-colors, 11));
+        
+    }
+
+    @media (max-width: 599px) {
+        padding: 8px 8px;
+        width: 75%;
+        margin: 10px 50px 10px 50px;
+       
+
+    }
+}
+
+.span-link {
+    text-decoration: none;
+    color: nth($font-colors, 11);
+    font-weight: normal;
+
+    &:hover {
+        text-decoration: underline;
+        color: nth($font-colors, 11);
+        font-weight: bold;
+    }
+}
+
+.donation-link {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+    }
+}

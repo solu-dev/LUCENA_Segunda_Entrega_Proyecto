@@ -1,0 +1,105 @@
+/* ESTILOS Y CONTAINERS DEL HEADER */
+@import '../base/variables';
+@import '../base/listas';
+@import '../base/mixins';
+
+
+.logo-container {
+    margin: 10px 10px;
+    
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        margin: 10px 10px;
+    }
+
+    @media only screen and (max-width: 599px) {
+        margin: 5px 5px; 
+    }   
+}
+
+.logo-position {
+    width: 5% ;
+    margin-top: 20px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        width: 8% ;
+        margin-top: 10px;
+    }
+
+    @media only screen and (max-width: 599px) {
+        width: 15% ;
+        margin-top: 5px;
+    }
+}
+
+.encabezado {
+    @include encabezado($font-gral, nth($font-colors, 9), 17px);
+    
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include encabezado($font-gral, nth($font-colors, 9), 10px);
+    }
+
+    @media only screen and (max-width: 599px) {
+        @include encabezado($font-gral, nth($font-colors, 9), 10px);
+    }
+}
+
+.sub-encabezado {
+    @include sub-encabezado($font-gral, nth($font-colors, 7), 14px);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include sub-encabezado($font-gral, nth($font-colors, 7), 8px);
+    }
+
+    @media only screen and (max-width: 599px) {
+        @include sub-encabezado($font-gral, nth($font-colors, 7), 8px);
+    }
+}
+
+/* CONTAINERS */
+.menu-container {
+    @include menu-container;
+    align-items: center;
+    background-color: nth($bg-color, 5);
+    height: 30px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        @include menu-container;  
+        background-color: nth($bg-color, 5);
+    }
+
+    @media only screen and (max-width: 599px) {
+        display: flex;
+        justify-content: space-evenly; 
+        height: 20px;
+    }
+
+}
+
+.banner-container {
+    margin: $margin-gral;
+    margin-bottom: 30px;
+    background-color: nth($bg-color, 1);
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        margin: $margin-tb-gral;
+        background-color: nth($bg-color, 1);
+    }
+
+    @media only screen and (max-width: 599px) {
+        margin: $margin-cp-gral;
+        background-color: nth($bg-color, 1);
+    }
+}
+
+.carousel-img {
+    height: 340px;
+
+    @media only screen and (min-width:600px) and (max-width:1024px) {
+        height: 250px;
+    }
+
+    @media only screen and (max-width: 599px) {
+        height: 130px;
+    }
+}
